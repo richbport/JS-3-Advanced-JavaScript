@@ -5,3 +5,6 @@ function counter() {
         return count;
     };
 }
+const increment = counter();
+console.log(increment()); //1
+console.log(increment()); //2
