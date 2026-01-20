@@ -20,3 +20,7 @@ p.greet();
 
 // math.js
 export const add = (a, b) => a + b;
+
+// main.js
+import { add } from './math.js';
+console.log(add(3, 4)); // 7
