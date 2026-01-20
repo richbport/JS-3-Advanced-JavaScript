@@ -15,3 +15,5 @@ class Person {
     }
     greet = () => console.log(`Hi, I'm ${this.name}`);
 }
+const p = new Person("Ava");
+p.greet();
