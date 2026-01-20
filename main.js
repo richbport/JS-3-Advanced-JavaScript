@@ -29,3 +29,9 @@ fetch('https://api.example.com')
 .then(res => res.json())
 .then(data => console.log(data))
 .catch(err => console.log(err));
+
+try {
+  throw new Error("Something went wrong!");
+} catch (err) {
+  console.log(err.message);
+}
