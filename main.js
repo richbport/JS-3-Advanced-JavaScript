@@ -18,23 +18,23 @@ class Person {
 const p = new Person("Ava");
 p.greet();
 
-// math.js
-export const add = (a, b) => a + b;
+// // math.js
+// export const add = (a, b) => a + b;
 
-// main.js
-import { add } from './math.js';
-console.log(add(3, 4)); // 7
+// // main.js
+// import { add } from './math.js';
+// console.log(add(3, 4)); // 7
 
-fetch('https://api.example.com')
-.then(res => res.json())
-.then(data => console.log(data))
-.catch(err => console.log(err));
+// fetch('https://api.example.com')
+// .then(res => res.json())
+// .then(data => console.log(data))
+// .catch(err => console.log(err));
 
-try {
-  throw new Error("Something went wrong!");
-} catch (err) {
-  console.log(err.message);
-}
+// try {
+//   throw new Error("Something went wrong!");
+// } catch (err) {
+//   console.log(err.message);
+// }
 
 const numbers = [1, 2, 3];
 const iterator = numbers[Symbol.iterator]();
