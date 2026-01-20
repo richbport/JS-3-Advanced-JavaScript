@@ -24,3 +24,8 @@ export const add = (a, b) => a + b;
 // main.js
 import { add } from './math.js';
 console.log(add(3, 4)); // 7
+
+fetch('https://api.example.com')
+.then(res => res.json())
+.then(data => console.log(data))
+.catch(err => console.log(err));
