@@ -8,3 +8,9 @@ function counter() {
 const increment = counter();
 console.log(increment()); //1
 console.log(increment()); //2
+
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+}
