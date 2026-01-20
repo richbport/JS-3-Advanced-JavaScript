@@ -35,3 +35,7 @@ try {
 } catch (err) {
   console.log(err.message);
 }
+
+const numbers = [1, 2, 3];
+const iterator = numbers[Symbol.iterator]();
+console.log(iterator.next().value); // 1
