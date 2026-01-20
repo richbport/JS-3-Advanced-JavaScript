@@ -17,3 +17,6 @@ class Person {
 }
 const p = new Person("Ava");
 p.greet();
+
+// math.js
+export const add = (a, b) => a + b;
