@@ -69,5 +69,7 @@ const loadTasks = () =>
       list.addTask(input.value);
       input.value = "";
       render();
+    } catch (err) {
+      alert(err.message);
     }
-  })
+  });
