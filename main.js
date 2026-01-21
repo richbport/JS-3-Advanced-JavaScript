@@ -1,22 +1,22 @@
-function counter() {
-    let count = 0;
-    return function() {
-        count++;
-        return count;
-    };
-}
-const increment = counter();
-console.log(increment()); //1
-console.log(increment()); //2
+// function counter() {
+//     let count = 0;
+//     return function() {
+//         count++;
+//         return count;
+//     };
+// }
+// const increment = counter();
+// console.log(increment()); //1
+// console.log(increment()); //2
 
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
-    greet = () => console.log(`Hi, I'm ${this.name}`);
-}
-const p = new Person("Ava");
-p.greet();
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     greet = () => console.log(`Hi, I'm ${this.name}`);
+// }
+// const p = new Person("Ava");
+// p.greet();
 
 // // math.js
 // export const add = (a, b) => a + b;
@@ -36,6 +36,13 @@ p.greet();
 //   console.log(err.message);
 // }
 
-const numbers = [1, 2, 3];
-const iterator = numbers[Symbol.iterator]();
-console.log(iterator.next().value); // 1
+// const numbers = [1, 2, 3];
+// const iterator = numbers[Symbol.iterator]();
+// console.log(iterator.next().value); // 1
+
+import { TodoList } from "./todo.js";
+
+const list = new TodoList();
+const input = document.getElementById("taskInput");
+const button = document.getElementById("addBtn");
+const ul = document.getElementById("taskList");
