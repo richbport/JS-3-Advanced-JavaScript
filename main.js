@@ -52,3 +52,13 @@ const loadTasks = () =>
   new Promise((resolve) => {
     setTimeout(() resolve(["Learn JS", "Build a project"]), 500);
   });
+
+  (async () => {
+    try {
+      const tasks = await loadTasks();
+      tasks.forEach((task) => list.addTask
+    (task));
+    render()
+  } catch (err) {
+  }
+  })
