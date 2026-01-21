@@ -73,3 +73,10 @@ const loadTasks = () =>
       alert(err.message);
     }
   });
+
+  function render() {
+    ul.innerHTML = "";
+    list.getTasks().forEach(task) => {
+    
+    }
+  }
