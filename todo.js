@@ -6,5 +6,5 @@ export class TodoList {
     this.#tasks.push(task);
   };
 
-  getTasks = () => [...this.#tasks];
+  getTasks = () => [ ... this.#tasks];
 }
