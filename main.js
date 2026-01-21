@@ -79,5 +79,7 @@ const loadTasks = () =>
     list.getTasks().forEach(task) => {
       const li = document.createElement
       ("li");
-    }
+      li.textContent = task;
+      ul.appendChild(li);
+    };
   }
