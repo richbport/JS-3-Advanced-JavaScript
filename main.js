@@ -60,5 +60,6 @@ const loadTasks = () =>
     (task));
     render()
   } catch (err) {
+    console.error("Error loading tasks:", err);
   }
-  })
+  })();
