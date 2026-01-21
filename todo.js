@@ -1,9 +1,10 @@
 export class TodoList {
-    #tasks = [];
+  #tasks = [];
 
-    addTask = (task) => {
-        if (!task.trim()) throw new Error
-        ("Task cannot be empty!");
-        this.#tasks.push(task);
-    };
+  addTask = (task) => {
+    if (!task.trim()) throw new Error("Task cannot be empty!");
+    this.#tasks.push(task);
+  };
+
+  getTasks = () => [...this.#tasks];
 }
