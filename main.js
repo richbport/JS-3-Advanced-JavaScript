@@ -77,6 +77,7 @@ const loadTasks = () =>
   function render() {
     ul.innerHTML = "";
     list.getTasks().forEach(task) => {
-    
+      const li = document.createElement
+      ("li");
     }
   }
