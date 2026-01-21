@@ -46,3 +46,9 @@ const list = new TodoList();
 const input = document.getElementById("taskInput");
 const button = document.getElementById("addBtn");
 const ul = document.getElementById("taskList");
+
+// Simulate loading data asynchronously using a Promise
+const loadTasks = () =>
+  new Promise((resolve) => {
+    setTimeout(() resolve(["Learn JS", "Build a project"]), 500);
+  });
