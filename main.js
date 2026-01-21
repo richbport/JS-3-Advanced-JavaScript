@@ -50,7 +50,7 @@ const ul = document.getElementById("taskList");
 // Simulate loading data asynchronously using a Promise
 const loadTasks = () =>
   new Promise((resolve) => {
-    setTimeout(() resolve(["Learn JS", "Build a project"]), 500);
+    setTimeout(() => resolve(["Learn JS", "Build a project"]), 500);
   });
 
   (async () => {
@@ -76,10 +76,10 @@ const loadTasks = () =>
 
   function render() {
     ul.innerHTML = "";
-    list.getTasks().forEach(task) => {
+    list.getTasks().forEach((task) => {
       const li = document.createElement
       ("li");
       li.textContent = task;
       ul.appendChild(li);
-    };
+    });
   }
