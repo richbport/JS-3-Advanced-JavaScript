@@ -63,3 +63,11 @@ const loadTasks = () =>
     console.error("Error loading tasks:", err);
   }
   })();
+
+  button.addEventListener("click", () => {
+    try {
+      list.addTask(input.value);
+      input.value = "";
+      render();
+    }
+  })
