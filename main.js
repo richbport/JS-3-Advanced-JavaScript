@@ -58,6 +58,7 @@ const loadTasks = () =>
       const tasks = await loadTasks();
       tasks.forEach((task) => list.addTask
     (task));
+    throw new Error("something went wrong");
     render()
   } catch (err) {
     console.error("Error loading tasks:", err);
