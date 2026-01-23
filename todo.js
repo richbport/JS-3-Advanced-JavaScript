@@ -9,7 +9,7 @@ export class TodoList {
   getTasks = () => [...this.#tasks];
 
   getTaskCount = () => {
-    console.log();
+    console.log("returning private value", this.#tasks.length);
     return this.#tasks.length;
   };
 }
