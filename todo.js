@@ -12,8 +12,10 @@ export class TodoList {
     console.log("returning private value", this.#tasks.length);
     return this.#tasks.length;
   };
+
+  deleteTask = () => {
+    this.#tasks.unshift()
+  }
+  
 }
 
-deleteTask = () => {
-  this.#tasks.unshift()
-}
