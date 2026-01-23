@@ -3,7 +3,7 @@ import { TodoList } from "./todo.js";
 const list = new TodoList();
 const input = document.getElementById("taskInput");
 const button = document.getElementById("addBtn");
-const deletebButton = document.getElementById("deleteBtn");
+const deleteButton = document.getElementById("deleteBtn");
 const ul = document.getElementById("taskList");
 
 // Simulate loading data asynchronously using a Promise
