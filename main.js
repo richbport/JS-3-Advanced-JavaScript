@@ -69,6 +69,7 @@ const loadTasks = () =>
       list.addTask(input.value);
       input.value = "";
       render();
+      console.log(list.getTaskCount());
     } catch (err) {
       alert(err.message);
     }
