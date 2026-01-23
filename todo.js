@@ -7,7 +7,9 @@ export class TodoList {
   };
 
   getTasks = () => [...this.#tasks];
-  
-  getTaskCount = () => this.#tasks.length;
-}
 
+  getTaskCount = () => {
+    console.log();
+    return this.#tasks.length;
+  };
+}

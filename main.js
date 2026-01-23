@@ -85,5 +85,5 @@ const loadTasks = () =>
   }
 
   console.log(list.#tasks);
-  console.log(list.getTaskCount);
+  console.log(list.getTaskCount());
   
