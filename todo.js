@@ -13,3 +13,7 @@ export class TodoList {
     return this.#tasks.length;
   };
 }
+
+deleteTask = () => {
+  this.#tasks.unshift()
+}
