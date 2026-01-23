@@ -83,3 +83,5 @@ const loadTasks = () =>
       ul.appendChild(li);
     });
   }
+
+  list.#tasks
