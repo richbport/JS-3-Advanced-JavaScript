@@ -14,8 +14,8 @@ export class TodoList {
   };
 
   deleteTask = () => {
+    console.log("deleting first task");
     this.#tasks.unshift()
   }
-  
 }
 
