@@ -1,6 +1,5 @@
 export class TodoList {
   #tasks = [];
-  taskCount = this.#tasks.length;
 
   addTask = (task) => {
     if (!task.trim()) throw new Error("Task cannot be empty!");
@@ -8,4 +7,7 @@ export class TodoList {
   };
 
   getTasks = () => [...this.#tasks];
+  
+  getTaskCount = () => this.#tasks.length;
 }
+
