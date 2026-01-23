@@ -84,4 +84,4 @@ const loadTasks = () =>
     });
   }
 
-  list.#tasks
+  console.log(list.tasks);
