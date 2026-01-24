@@ -37,7 +37,6 @@ const loadTasks = () =>
   deleteButton.addEventListener("click", () => {
     try {
       list.deleteTask();
-      input.value = "";
       render();
     } catch (err) {
       alert(err.message);
