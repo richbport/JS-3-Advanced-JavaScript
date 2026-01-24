@@ -16,7 +16,7 @@ export class TodoList {
   deleteTask = () => {
     console.log("deleting first task", this.#tasks);
     
-    this.#tasks.pop();
+    this.#tasks.shift();
     
     console.log("deleting task", this.#tasks);
   };
