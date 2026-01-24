@@ -13,12 +13,8 @@ export class TodoList {
     return this.#tasks.length;
   };
 
-  deleteTask = () => {
-    console.log("deleting first task", this.#tasks);
-    
+  deleteTask = () => {    
     this.#tasks.shift();
-    
-    console.log("deleting task", this.#tasks);
   };
 }
 
